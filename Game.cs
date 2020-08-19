@@ -24,7 +24,7 @@ namespace HelloWorld
             //this stores faith, the "mana" of this game
             float faith = 10.0f;
             //this stores aggro, which is the initiative/aggro stat
-            float aggro = 1.0f * ((damage / 2) + defense);
+            float aggro = 1.0f * ((damage / 2) + defense + (faith/4));
 
             while (choosing)
             {
@@ -39,7 +39,7 @@ namespace HelloWorld
 
                 Console.WriteLine("Are you sure of this?");
                 string ans = Console.ReadLine();
-                if (ans == "yes" || ans == "Yes")
+                if (ans == "yes" || ans == "Yes" || ans == "y")
                 {
                     choosing = false;
                 }
@@ -52,7 +52,7 @@ namespace HelloWorld
                 damage = 20.0f;
                 defense = 30.0f;
                 faith = 10.0f;
-                aggro = 1.0f * ((damage / 2) + defense);
+                aggro = 1.0f * ((damage / 2) + defense + (faith / 4));
                 role = "Paladin";
             }
             else if (input == '2')
@@ -61,7 +61,7 @@ namespace HelloWorld
                 damage = 50.0f;
                 defense = 10.0f;
                 faith = 20.0f;
-                aggro = 1.0f * ((damage / 2) + defense);
+                aggro = 1.0f * ((damage / 2) + defense + (faith / 4));
                 role = "Templar";
             }
             else if (input == '3')
@@ -70,7 +70,7 @@ namespace HelloWorld
                 damage = 20.0f;
                 defense = 20.0f;
                 faith = 30.0f;
-                aggro = 1.0f * ((damage / 2) + defense);
+                aggro = 1.0f * ((damage / 2) + defense + (faith / 4));
                 role = "Cleric";
             }
             else if (input == '4')
@@ -79,7 +79,7 @@ namespace HelloWorld
                 damage = 10.0f;
                 defense = 10.0f;
                 faith = 40.0f;
-                aggro = 1.0f * ((damage / 2) + defense);
+                aggro = 1.0f * ((damage / 2) + defense + (faith / 4));
                 role = "Bishop";
             }
 
@@ -99,7 +99,7 @@ namespace HelloWorld
             Console.WriteLine("Damage: " + damage);
             Console.WriteLine("Armor: " + defense);
             Console.WriteLine("Faith: " + faith);
-            //Console.WriteLine(aggro);
+            Console.WriteLine(aggro);
 
 
             //create an application that gets the user's name along with an additional input
