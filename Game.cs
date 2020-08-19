@@ -45,12 +45,14 @@ namespace HelloWorld
                 }
             }
 
+            //
             if (input == '1')
             {
                 health = 120.0f;
                 damage = 20.0f;
                 defense = 30.0f;
                 faith = 10.0f;
+                aggro = 1.0f * ((damage / 2) + defense);
                 role = "Paladin";
             }
             else if (input == '2')
@@ -59,6 +61,7 @@ namespace HelloWorld
                 damage = 50.0f;
                 defense = 10.0f;
                 faith = 20.0f;
+                aggro = 1.0f * ((damage / 2) + defense);
                 role = "Templar";
             }
             else if (input == '3')
@@ -67,6 +70,7 @@ namespace HelloWorld
                 damage = 20.0f;
                 defense = 20.0f;
                 faith = 30.0f;
+                aggro = 1.0f * ((damage / 2) + defense);
                 role = "Cleric";
             }
             else if (input == '4')
@@ -75,6 +79,7 @@ namespace HelloWorld
                 damage = 10.0f;
                 defense = 10.0f;
                 faith = 40.0f;
+                aggro = 1.0f * ((damage / 2) + defense);
                 role = "Bishop";
             }
 
@@ -87,21 +92,20 @@ namespace HelloWorld
             int level = 1;
             //bool ready = true;
             Console.Clear();
+            //Displays the character's stats
             Console.WriteLine("Player Name: " + name);
             Console.WriteLine("Player Level: " + role + " " + level);
             Console.WriteLine("Health: " + health);
             Console.WriteLine("Damage: " + damage);
             Console.WriteLine("Armor: " + defense);
             Console.WriteLine("Faith: " + faith);
+            //Console.WriteLine(aggro);
 
 
             //create an application that gets the user's name along with an additional input
             //print the user's name and input to the console along with their stats. Must use all data types
 
-            //Console.WriteLine(health);
-            //health = health + healthRegen;
-            //Console.Write(name + " just healed " + healthRegen);
-            //Console.Write("Test");
+            
         }
     }
 }
