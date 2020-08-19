@@ -38,8 +38,8 @@ namespace HelloWorld
                 Console.Clear();
 
                 Console.WriteLine("Are you sure of this?");
-                string ans = Console.ReadLine();
-                if (ans == "yes" || ans == "Yes" || ans == "y")
+                char ans = Console.ReadKey().KeyChar;
+                if (ans == 'y')
                 {
                     choosing = false;
                 }
