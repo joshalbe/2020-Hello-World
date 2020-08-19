@@ -45,7 +45,7 @@ namespace HelloWorld
                 }
             }
 
-            if (input == 1)
+            if (input == '1')
             {
                 health = 120.0f;
                 damage = 20.0f;
@@ -53,7 +53,7 @@ namespace HelloWorld
                 faith = 10.0f;
                 role = "Paladin";
             }
-            else if (input == 2)
+            else if (input == '2')
             {
                 health = 100.0f;
                 damage = 50.0f;
@@ -61,7 +61,7 @@ namespace HelloWorld
                 faith = 20.0f;
                 role = "Templar";
             }
-            else if (input == 3)
+            else if (input == '3')
             {
                 health = 120.0f;
                 damage = 20.0f;
@@ -69,7 +69,7 @@ namespace HelloWorld
                 faith = 30.0f;
                 role = "Cleric";
             }
-            else if (input == 4)
+            else if (input == '4')
             {
                 health = 120.0f;
                 damage = 10.0f;
