@@ -11,5 +11,6 @@ namespace HelloWorld
         protected float damage = 10.0f;
         protected float defense = 10.0f;
         protected float faith = 10.0f;
+        protected float aggro = 1.0f;
     }
 }
